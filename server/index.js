@@ -53,7 +53,7 @@ const startListening = () => {
     console.log(`Mixing it up on port ${PORT}`)
   );
   const io = socketio(server);
-  require("./socket");//(io);
+  require("./socket")(io);
   
 };
 
